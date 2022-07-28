@@ -91,18 +91,19 @@
     //change colur of all nav link to white when div coloiur change to black 2 white.
 
     document.querySelectorAll(".nav-a").forEach((delta) => {
-     if (res > 0 && res < window.innerWidth * 1.5) {
-       delta.style.color = "black";
-
-        if (res >= window.innerWidth + window.innerHeight / 2) {
-         NavBar.style.display = "none";
-        } else NavBar.style.display = "flex";
-      } else {
-       delta.style.color = "white";
-      }
+      if (res > 0 && res < window.innerWidth * 1.5) 
+          {
+            delta.style.color = "black";
+            NavBar.style.display="flex";
+          }  
+        else
+          {
+            delta.style.color = "white";
+            NavBar.style.display="none";
+          }
      });
     });
-   </script>
 
+   </script>
   </body>
 </html>
